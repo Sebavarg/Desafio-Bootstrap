@@ -1,0 +1,43 @@
+.logo img {
+    border-radius: 80%;
+    width: 90%;
+    height: 85px;
+    padding: 5px;
+}
+
+nav {
+    background-color: rgb(113, 219, 154);
+    align-self: center;
+}
+
+.navbar-nav li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bi-facebook:hover {
+    color: #3b5998;
+}
+
+.bi-whatsapp:hover {
+    color: #25D366;
+}
+
+.bi-instagram:hover {
+    color: #8a3ab9;
+}
+
+main contact {
+    display: grid;
+}
