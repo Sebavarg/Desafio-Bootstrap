@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Links de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <!-- icons -->
@@ -12,7 +14,7 @@
     <!-- BTS icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- Mis estilos -->
-    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Link de Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,16 +51,25 @@
             </div>
         </nav>
         <section id="carrusel">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class src="media/zanahoria.jpg" class=" w-100 " alt="..." />
+                        <img class src="media/caballo.jpeg" class=" w-100 " alt="caballo" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Mas de 50 años trabajando el suelo mendocino</h3>
+                        </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./media/sembrando.jpeg" class="w-100" alt="... " />
+                        <img style=" height:max-content" src="./media/sembrando.jpeg" class="w-100" alt="sembrando " />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Tercera Generación de Productores</h5>
+                        </div>
                     </div>
                     <div class="carousel-item ">
-                        <img src="./media/caballo.jpeg " class="w-100" alt="... " />
+                        <img src="./media/plantacion.jpeg " class="w-100" alt=" zanahoria" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>300 Hectáreas de Zanahoria</h5>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleInterval " data-bs-slide="prev ">
@@ -71,6 +82,7 @@
         </button>
             </div>
         </section>
+
     </header>
     <section id="clientes" class="container-fluid mb-5 ">
         <h1 class="h3 text-center mt-3 mb-4 ">Empresas que trabajan con nosotros</h1>
@@ -98,7 +110,7 @@
         </div>
     </section>
     <footer>
-        <div class="contact-info ">
+        <div class="animate__animated animate__backInLeft" class="contact-info ">
             <h7>
                 <p><i class="bi bi-telephone "></i> +54-0261-3059894 </p>
                 <p><i class="bi bi-envelope "></i> mafseragro@gmail.com </p>
@@ -109,7 +121,7 @@
             <a href="https://wa.me/542613059894 " target="_blank "><i class="bi bi-whatsapp fs-2 "></i></a>
             <a href="https://www.instagram.com/productos_maf/ " target="_blank "><i class="bi bi-instagram fs-2 "></i></a>
         </div>
-        <div class="location ">
+        <div class="animate__animated animate__backInRight" class="location ">
             <h4><i class="bi bi-geo-alt-fill "> Ubicación</i>
             </h4>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214303.26690108955!2d-68.87812164787013!3d-32.93810870301469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e135b485ee42f%3A0x1e7cd57d7c5878ae!2sMAF!5e0!3m2!1ses-419!2sar!4v1654548538755!5m2!1ses-419!2sar "
