@@ -11,7 +11,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 8%, 40%, 15%, 20%;
     grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
-    background-color: rgb(113, 219, 154);
+    background-color: verdePastel;
 }
 
 #carrusel {
@@ -99,3 +99,6 @@ footer {
 main contact {
     display: grid;
 }
+
+
+/*# sourceMappingURL=styles.css.map */

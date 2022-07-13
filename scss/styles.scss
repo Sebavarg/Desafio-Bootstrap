@@ -1,0 +1,70 @@
+@import "variables";
+@import "contact";
+// es importante que el import variable este primero por si es usado por el siguiente import
+#main,
+#main-company,
+#main-contact,
+#main-news,
+#main-actives {
+    display: grid;
+}
+
+#main {
+    justify-items: stretch;
+    grid-template-columns: 100%;
+    grid-template-rows: 8%, 40%, 15%, 20%;
+    grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
+    background-color: $verdePastel;
+    nav {
+        background-color: $verdePastel;
+        grid-area: nav-bar;
+        .logo img {
+            border-radius: 80%;
+            width: 90%;
+            height: 85px;
+            padding: 5px;
+        }
+        .navbar-nav {
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: medium;
+            .navbar-nav li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    #carrusel {
+        grid-area: carrusel;
+        background-color: white;
+        .carousel-inner {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+    #clientes {
+        grid-area: clientes;
+        background-color: rgb(113, 219, 154);
+        width: 80%;
+    }
+    footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .bi-facebook:hover {
+            color: #3b5998;
+        }
+        .bi-whatsapp:hover {
+            color: #25D366;
+        }
+        .bi-instagram:hover {
+            color: #8a3ab9;
+        }
+    }
+}

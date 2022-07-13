@@ -1,0 +1,12 @@
+#main-contact {
+    grid-template-areas: "nav-var" "contacto" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 15%, 40%, auto;
+    #contacto {
+        grid-area: contacto;
+    }
+    #formulario,
+    #ubicacion {
+        background-color: rgb(193, 243, 170);
+    }
+}
