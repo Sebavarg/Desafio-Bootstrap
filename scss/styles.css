@@ -1,104 +1,80 @@
+#main-contact {
+  grid-template-areas: "nav-var" "contacto" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 15%, 40%, auto;
+}
+#main-contact #contacto {
+  grid-area: contacto;
+}
+#main-contact #formulario,
+#main-contact #ubicacion {
+  background-color: rgb(193, 243, 170);
+}
+
 #main,
 #main-company,
 #main-contact,
 #main-news,
 #main-actives {
-    display: grid;
+  display: grid;
 }
 
 #main {
-    justify-items: stretch;
-    grid-template-columns: 100%;
-    grid-template-rows: 8%, 40%, 15%, 20%;
-    grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
-    background-color: verdePastel;
+  justify-items: stretch;
+  grid-template-columns: 100%;
+  grid-template-rows: 8%, 40%, 15%, 20%;
+  grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
+  background-color: rgb(113, 219, 154);
 }
-
-#carrusel {
-    grid-area: carrusel;
-    background-color: white;
+#main nav {
+  background-color: rgb(113, 219, 154);
+  grid-area: nav-bar;
 }
-
-.carousel-inner {
-    height: 75vh;
-    width: 100%;
+#main nav .logo img {
+  border-radius: 80%;
+  width: 90%;
+  height: 85px;
+  padding: 5px;
 }
-
-.navbar-nav {
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: medium;
+#main nav .navbar-nav {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: medium;
 }
-
-#clientes {
-    grid-area: clientes;
-    background-color: rgb(113, 219, 154);
-    width: 80%;
+#main nav .navbar-nav .navbar-nav li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
 }
-
-#contacto {
-    grid-area: contacto;
+#main #carrusel {
+  grid-area: carrusel;
+  background-color: white;
 }
-
-#main-contact {
-    grid-template-areas: "nav-var" "contacto" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 15%, 40%, auto;
+#main #carrusel .carousel-inner {
+  height: 75vh;
+  width: 100%;
 }
-
-#formulario,
-#ubicacion {
-    background-color: rgb(193, 243, 170);
+#main #clientes {
+  grid-area: clientes;
+  background-color: rgb(113, 219, 154);
+  width: 80%;
 }
-
-.ubicacion {
-    background-color: rgb(239, 247, 204);
+#main footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.logo img {
-    border-radius: 80%;
-    width: 90%;
-    height: 85px;
-    padding: 5px;
+#main footer .bi-facebook:hover {
+  color: #3b5998;
 }
-
-nav {
-    background-color: rgb(113, 219, 154);
-    grid-area: nav-bar;
+#main footer .bi-whatsapp:hover {
+  color: #25D366;
 }
-
-.navbar-nav li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
-}
-
-footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.bi-facebook:hover {
-    color: #3b5998;
-}
-
-.bi-whatsapp:hover {
-    color: #25D366;
-}
-
-.bi-instagram:hover {
-    color: #8a3ab9;
-}
-
-main contact {
-    display: grid;
-}
-
-
-/*# sourceMappingURL=styles.css.map */
+#main footer .bi-instagram:hover {
+  color: #8a3ab9;
+}/*# sourceMappingURL=styles.css.map */
