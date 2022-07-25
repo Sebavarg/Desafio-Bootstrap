@@ -1,0 +1,12 @@
+$milAncho: 1000px;
+@if ($milAncho<=900px) {
+    #main footer {
+        background-color: grey;
+    }
+}
+
+@else {
+    #main footer {
+        background-color: greenyellow;
+    }
+}

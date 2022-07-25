@@ -1,0 +1,9 @@
+$mapRedes:(facebook:red, instagram:yellow, twitter:rgb(9, 240, 28));
+@each $red,
+$color in $mapRedes {
+    .#{$red} {
+        color: $color;
+    }
+}
+
+$mapEstilos:( color:red, tFuente:5px)

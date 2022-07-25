@@ -1,0 +1,4 @@
+@mixin estilos ($fuente, $estiloFuente) {
+    font-family: $fuente;
+    font-style: $estiloFuente;
+}
