@@ -1,0 +1,80 @@
+#main-contact {
+  grid-template-areas: "nav-var" "contacto" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 15%, 40%, auto;
+}
+#main-contact #contacto {
+  grid-area: contacto;
+}
+#main-contact #formulario,
+#main-contact #ubicacion {
+  background-color: rgb(193, 243, 170);
+}
+
+#main,
+#main-company,
+#main-contact,
+#main-news,
+#main-actives {
+  display: grid;
+}
+
+#main {
+  justify-items: stretch;
+  grid-template-columns: 100%;
+  grid-template-rows: 8%, 40%, 15%, 20%;
+  grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
+  background-color: rgb(113, 219, 154);
+}
+#main nav {
+  background-color: rgb(113, 219, 154);
+  grid-area: nav-bar;
+}
+#main nav .logo img {
+  border-radius: 80%;
+  width: 90%;
+  height: 85px;
+  padding: 5px;
+}
+#main nav .navbar-nav {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: medium;
+}
+#main nav .navbar-nav .navbar-nav li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+#main #carrusel {
+  grid-area: carrusel;
+  background-color: white;
+}
+#main #carrusel .carousel-inner {
+  height: 75vh;
+  width: 100%;
+}
+#main #clientes {
+  grid-area: clientes;
+  background-color: rgb(113, 219, 154);
+  width: 80%;
+}
+#main footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#main footer .bi-facebook:hover {
+  color: #3b5998;
+}
+#main footer .bi-whatsapp:hover {
+  color: #25D366;
+}
+#main footer .bi-instagram:hover {
+  color: #8a3ab9;
+}/*# sourceMappingURL=styles.css.map */
