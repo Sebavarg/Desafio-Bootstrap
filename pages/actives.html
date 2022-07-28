@@ -5,56 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.A.F. Nuestros Activos</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Links de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- icons -->
+    <link rel="shortcut icon" href="media/logo.jpeg">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- BTS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../scss/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;900&display=swap" rel="stylesheet">
+    <title>M.A.F. Nuestros Activos</title>
 </head>
 
 <body ID="main-actives">
     <header>
-        <div class="logo">
-            <img src="../media/logo.jpeg" alt="logo del sitio">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="company.html">Empresa</a></li>
-                <li><a href="actives.html">Nuestros Activos</a></li>
-                <li><a href="news.html">Novedades</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg mb-5">
+            <div class="container-fluid logo ">
+                <a class="navbar-brand" href="#"><img class="logo" src="../media/logo.jpeg" alt="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="company.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actives.html">Nuestros Activos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html"> Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                </div>
+            </div>
         </nav>
     </header>
-    <section class="screen-actives">
-        <div>
-            <h4>Nuestros Cultivos</h4>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores illum quisquam rem, doloribus voluptas inventore cupiditate, veniam laborum aliquid incidunt cumque nesciunt fugit dolores assumenda veritatis quis necessitatibus at eos!</p>
+
+    <section id="active">
+        <div class="animate__animated animate__backInLeft" id="cultivos">
+            <h1>Nuestros Cultivos</h1>
+            <p> En 1980, Miguel Ángel Fernández comenzaba con su emprendimiento en el ámbito agricultor. Pero fue recién en 1992 que le dio nombre MAF convirtiendose en un empresa que lleva mas de 25 años produciendo hortalizas varias, especializados en zanahorias,
+                lechugas y zapallos.
+            </p>
             <video controls loop autoplay poster="#" src="../media/video verduras.mp4"> Disculpa. Tu navegador no es compatible con el video/video>
         </div>
-        <div>
-            <h4> Nuestra especialidad: Zanahorias</h4> 
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id, culpa modi voluptatibus distinctio vitae. Facilis adipisci, natus inventore iure officiis cupiditate debitis, quia eius laborum, modi veritatis voluptas assumenda!</p>   
-         <video controls loop autoplay poster="#" src="../media/video proceso.mp4"> Disculpa. Tu navegador no es compatible con el video/video>   
+        <div class="animate__animated animate__backInRight"  id="zanahoria">
+            <h1> Nuestra especialidad: Zanahorias</h1> 
+            <p> En Argentina se producen  cerca de 6000 hectáreas  de las cuales cerca de 54% se ubican en Mendoza destacando la zona del Valle de Uco.</p>
+            <p> Beneficiandose de la altura, condiciones climáticas y los suelos livianos (textura arenosa) la empresa se destaca en la producción de híbridos de zanahorias en esta zona.</p>
+            <p> Con una densidad  de siembra de 300 mil semillas por hectárea se produce una zanahoria que se destaca dentro del mercado nacional por ser de tipo nantesa, de color homogéneo, de 19 a 26 cm, cilíndricas, de buen gusto y calidad.</p>   
+         <div><video controls loop autoplay poster="#" src="../media/video proceso.mp4"> Disculpa. Tu navegador no es compatible con el video/video></div>   
         </div>
     </section>
+    
     <footer>
-        <div class="contact-info">
-            <h5>Telefono</h5>
-            <p>xxxxxxx</p>
-            <h5>Mail</h5>
-            <p>rrhh-maf@gmail.com</p>
+        <div class="animate__animated animate__backInLeft" class="contact-info ">
+            <h7>
+                <p><i class="bi bi-telephone "></i> +54-0261-3059894 </p>
+                <p><i class="bi bi-envelope "></i> mafseragro@gmail.com </p>
+            </h7>
         </div>
-        <div class="social-media">
-            <p>instagram</p>
+        <div class="redes ">
+            <a href="https://www.facebook.com/maf.fernandez.18 " target="_blank "> <i class="bi bi-facebook fs-2 "></i></a>
+            <a href="https://wa.me/542613059894 " target="_blank "><i class="bi bi-whatsapp fs-2 "></i></a>
+            <a href="https://www.instagram.com/productos_maf/ " target="_blank "><i class="bi bi-instagram fs-2 "></i></a>
         </div>
-        <div class="location">
-            <h5>Ubicacion</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214303.26690108955!2d-68.87812164787013!3d-32.93810870301469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e135b485ee42f%3A0x1e7cd57d7c5878ae!2sMAF!5e0!3m2!1ses-419!2sar!4v1654548538755!5m2!1ses-419!2sar"
-                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="animate__animated animate__backInRight" class="location ">
+            <h4><i class="bi bi-geo-alt-fill "> Ubicación</i>
+            </h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214303.26690108955!2d-68.87812164787013!3d-32.93810870301469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e135b485ee42f%3A0x1e7cd57d7c5878ae!2sMAF!5e0!3m2!1ses-419!2sar!4v1654548538755!5m2!1ses-419!2sar "
+                width="200 " height="150 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>

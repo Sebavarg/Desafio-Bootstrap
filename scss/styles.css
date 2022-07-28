@@ -1,3 +1,51 @@
+nav {
+  background-color: rgb(113, 219, 154);
+  grid-area: nav-bar;
+}
+nav .logo img {
+  border-radius: 80%;
+  width: 90%;
+  height: 85px;
+  padding: 5px;
+}
+nav .navbar-nav {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: medium;
+}
+nav .navbar-nav .navbar-nav li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .bi-facebook:hover {
+  color: #3b5998;
+}
+footer .bi-whatsapp:hover {
+  color: #25D366;
+}
+footer .bi-instagram:hover {
+  color: #8a3ab9;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
 #main-contact {
   grid-template-areas: "nav-var" "contacto" "footer";
   grid-template-columns: 100%;
@@ -11,7 +59,173 @@
   background-color: rgb(193, 243, 170);
 }
 
-#main,
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  #main-contact {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 70% auto;
+    grid-template-areas: "header" "contacto" "footer";
+    grid-row: 0px;
+  }
+}
+#main-company {
+  grid-template-areas: "navbar" "company" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 10%, 60%, auto;
+  background-color: rgb(113, 219, 154);
+}
+#main-company #company {
+  grid-area: company;
+}
+#main-company #company #historia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+}
+#main-company #company #historia h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#main-company #company #historia p {
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#main-company #company #perfil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+}
+#main-company #company #perfil h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#main-company #company #perfil p {
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#main-company #company #video {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 7%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  #main-company {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% auto;
+    grid-template-areas: "header" "screen-company" "footer";
+    grid-row: 0px;
+  }
+  .company {
+    flex-direction: row;
+  }
+  .company #video iframe {
+    width: 90%;
+    height: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+#main-actives {
+  grid-template-areas: "navbar" "active" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 15%, 40%, auto;
+  background-color: rgb(113, 219, 154);
+}
+#main-actives #active {
+  grid-area: active;
+}
+#main-actives #active #cultivos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+}
+#main-actives #active #cultivos h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#main-actives #active #cultivos p {
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#main-actives #active #zanahoria {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 7%;
+}
+#main-actives #active #zanahoria h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#main-actives #active #zanahoria p {
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  #main-actives {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% auto;
+    grid-template-areas: "header" "actives" "footer";
+    grid-row: 0px;
+  }
+  .actives div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .actives div video {
+    width: 90%;
+    height: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+  }
+}
+#main-news {
+  grid-template-areas: "nav-var" "news" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 15%, 40%, auto;
+  background-color: rgb(113, 219, 154);
+}
+#main-news #news {
+  grid-area: news;
+  background-color: white;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+#main-news #news .card {
+  background-color: rgb(247, 198, 169);
+  padding: 3px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  #main-news {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 70% auto;
+    grid-template-areas: "header" "screen-news" "footer";
+    grid-row: 0px;
+  }
+  .news {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+  }
+}
+#main-index,
 #main-company,
 #main-contact,
 #main-news,
@@ -19,62 +233,36 @@
   display: grid;
 }
 
-#main {
+#main-index {
   justify-items: stretch;
   grid-template-columns: 100%;
   grid-template-rows: 8%, 40%, 15%, 20%;
   grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
   background-color: rgb(113, 219, 154);
 }
-#main nav {
-  background-color: rgb(113, 219, 154);
-  grid-area: nav-bar;
-}
-#main nav .logo img {
-  border-radius: 80%;
-  width: 90%;
-  height: 85px;
-  padding: 5px;
-}
-#main nav .navbar-nav {
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: medium;
-}
-#main nav .navbar-nav .navbar-nav li {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100%;
-  width: 100%;
-}
-#main #carrusel {
+#main-index #carouselExampleCaptions {
   grid-area: carrusel;
-  background-color: white;
 }
-#main #carrusel .carousel-inner {
-  height: 75vh;
-  width: 100%;
+#main-index #carouselExampleCaptions .carousel-item div {
+  background-color: rgba(0, 0, 0, 0.452);
 }
-#main #clientes {
+#main-index #carouselExampleCaptions .carousel-item div h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 3px;
+  color: rgba(245, 245, 245, 0.897);
+}
+#main-index #clientes {
   grid-area: clientes;
   background-color: rgb(113, 219, 154);
   width: 80%;
 }
-#main footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#main footer .bi-facebook:hover {
-  color: #3b5998;
-}
-#main footer .bi-whatsapp:hover {
-  color: #25D366;
-}
-#main footer .bi-instagram:hover {
-  color: #8a3ab9;
+
+@media screen and (min-width: 320px) and (max-width: 1000px) {
+  #main-index {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto 25% auto;
+    grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
+    grid-row: 0px;
+  }
 }/*# sourceMappingURL=styles.css.map */

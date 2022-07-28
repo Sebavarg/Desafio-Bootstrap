@@ -5,52 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.A.F. Novedades</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Links de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- icons -->
+    <link rel="shortcut icon" href="media/logo.jpeg">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- BTS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../scss/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;900&display=swap" rel="stylesheet">
+    <title>M.A.F. Novedades</title>
 </head>
 
 <body ID="main-news">
     <header>
-        <div class="logo">
-            <img src="../media/logo.jpeg" alt="logo del sitio">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="company.html">Empresa</a></li>
-                <li><a href="actives.html">Nuestros Activos</a></li>
-                <li><a href="news.html">Novedades</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg mb-5">
+            <div class="container-fluid logo ">
+                <a class="navbar-brand" href="#"><img class="logo" src="../media/logo.jpeg" alt="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="company.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actives.html">Nuestros Activos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html"> Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                </div>
+            </div>
         </nav>
     </header>
-    <section class="screen-news">
-        <div>novedad 1</div>
-        <div> novedad 2</div>
-        <div>novedad 3</div>
-        <div>novedad 4</div>
-        <div>novedad 5</div>
-        <div>novedad 6</div>
+    <section id="news">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="animate__animated animate__backInLeft" class="card-body">
+                        <h5 class="card-title">Culminó la feria Fruit Logística que desarrolló en Berlín, Alemania</h5>
+                        <p class="card-text">Con la participacion de MAF SA y otras empresas de la Provincia junto con ProMendoza y el Consejo Federal de Inversiones viajaron a Alemania para asistir a una de las ferias de frutas y hortalizas frescas más grandes del mundo,
+                            que este año tuvo 2 mil expositores de 87 países.</p>
+                        <a href="https://mendoza24.com.ar/noticias_locales/1718-mendoza-busca-diversificar-mercados-de-frutas-y-hortalizas-frescas-en-berlin" class="btn btn-primary"> Saber más </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="animate__animated animate__backInRight" class="card-body">
+                        <h5 class="card-title">Economías regionales: Zanahorias de punta en Mendoza</h5>
+                        <p class="card-text">Con tecnología que permite lograr calidad, Miguel Angel Fernández produce, con riego, 100 toneladas por hectárea, “a la sombra” de la vitivinicultura.</p>
+                        <a href="https://www.clarin.com/rural/zanahorias-punta-mendoza_0_H11ZD4qsG.html" class="btn btn-primary">Saber más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
     <footer>
-        <div class="contact-info">
-            <h5>Telefono</h5>
-            <p>xxxxxxx</p>
-            <h5>Mail</h5>
-            <p>rrhh-maf@gmail.com</p>
+        <div class="animate__animated animate__backInLeft" class="contact-info ">
+            <h7>
+                <p><i class="bi bi-telephone "></i> +54-0261-3059894 </p>
+                <p><i class="bi bi-envelope "></i> mafseragro@gmail.com </p>
+            </h7>
         </div>
-        <div class="social-media">
-            <p>instagram</p>
+        <div class="redes ">
+            <a href="https://www.facebook.com/maf.fernandez.18 " target="_blank "> <i class="bi bi-facebook fs-2 "></i></a>
+            <a href="https://wa.me/542613059894 " target="_blank "><i class="bi bi-whatsapp fs-2 "></i></a>
+            <a href="https://www.instagram.com/productos_maf/ " target="_blank "><i class="bi bi-instagram fs-2 "></i></a>
         </div>
-        <div class="location">
-            <h5>Ubicacion</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214303.26690108955!2d-68.87812164787013!3d-32.93810870301469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e135b485ee42f%3A0x1e7cd57d7c5878ae!2sMAF!5e0!3m2!1ses-419!2sar!4v1654548538755!5m2!1ses-419!2sar"
-                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="animate__animated animate__backInRight" class="location ">
+            <h4><i class="bi bi-geo-alt-fill "> Ubicación</i>
+            </h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214303.26690108955!2d-68.87812164787013!3d-32.93810870301469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e135b485ee42f%3A0x1e7cd57d7c5878ae!2sMAF!5e0!3m2!1ses-419!2sar!4v1654548538755!5m2!1ses-419!2sar "
+                width="200 " height="150 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
