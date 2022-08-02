@@ -1,7 +1,12 @@
 @import "variables";
+@import "nav";
+@import "footer";
 @import "contact";
+@import "company";
+@import "actives";
+@import "news";
 // es importante que el import variable este primero por si es usado por el siguiente import
-#main,
+#main-index,
 #main-company,
 #main-contact,
 #main-news,
@@ -9,42 +14,24 @@
     display: grid;
 }
 
-#main {
+#main-index {
     justify-items: stretch;
     grid-template-columns: 100%;
     grid-template-rows: 8%, 40%, 15%, 20%;
     grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
     background-color: $verdePastel;
-    nav {
-        background-color: $verdePastel;
-        grid-area: nav-bar;
-        .logo img {
-            border-radius: 80%;
-            width: 90%;
-            height: 85px;
-            padding: 5px;
-        }
-        .navbar-nav {
-            width: 100%;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: medium;
-            .navbar-nav li {
-                list-style: none;
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                height: 100%;
-                width: 100%;
-            }
-        }
-    }
-    #carrusel {
+    #carouselExampleCaptions {
         grid-area: carrusel;
-        background-color: white;
-        .carousel-inner {
-            height: 75vh;
-            width: 100%;
+        .carousel-item {
+            div {
+                background-color: rgba(0, 0, 0, 0.452);
+                h3 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 40px;
+                    line-height: 3px;
+                    color: rgba(245, 245, 245, 0.897);
+                }
+            }
         }
     }
     #clientes {
@@ -52,19 +39,13 @@
         background-color: rgb(113, 219, 154);
         width: 80%;
     }
-    footer {
-        grid-area: footer;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        .bi-facebook:hover {
-            color: #3b5998;
-        }
-        .bi-whatsapp:hover {
-            color: #25D366;
-        }
-        .bi-instagram:hover {
-            color: #8a3ab9;
-        }
+}
+
+@media screen and (min-width: 320px) and (max-width:1000px) {
+    #main-index {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% auto 25% auto;
+        grid-template-areas: "nav-bar" "carrusel" "clientes" "footer";
+        grid-row: 0px;
     }
 }
